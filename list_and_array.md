@@ -8,8 +8,9 @@ In the book "Learning Perl", the list and array are defined clearly.
                   #    @a = qw /1 ab/;     
                   # or @a = qw {1 ab};
 
-@b = @a;
-$c = \@a;
+@b = @a;    # b is a copy from a
+$c = \@a;   # c is a reference to a
+            # if you swap a's elements, b is not changed but c (since it is a reference)
 
 print "@a \n";
 print "@b \n";
