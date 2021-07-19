@@ -1,0 +1,2 @@
+In the book "Learning Perl", the list and array are defined clearly.
+> A list is an ordered collection of scalars. An array is a variable that contains a list. People tend to use the terms interchangeably, but there’s a big difference. The list is the data and the array is the variable that stores that data. You can have a list value that isn’t in an array, but every array variable holds a list (although that list may be empty).
