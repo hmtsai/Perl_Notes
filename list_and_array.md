@@ -33,3 +33,28 @@ ab 1
 1 ab 
 ab 1 
 ```
+
+* array in another array
+
+use [ ] inside another array to *represent reference of the inside array*.
+[a, b] is a reference of the list (a, b).
+
+```Perl
+@arr = ( [a, b], 
+         333 );
+
+$s = @arr[0];
+print "$s \n";       # $s is scaler stored the reference of the list (a, b) 
+print "@$s[1] \n";
+print "$s->[1]\n";
+print "$\@arr[0]->[1] \n";
+print "$arr[1] \n";
+```
+* Result
+```
+ARRAY(0xbb9950) 
+b 
+b
+b 
+333 
+```
